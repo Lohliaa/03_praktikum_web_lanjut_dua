@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\aboutController;
 use App\Http\Controllers\contactController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,8 +16,8 @@ use App\Http\Controllers\contactController;
 |
 */
 
-Route::get('/',[homeController::class, 'home']);
+Route::get('/',[homeController::class, 'index'])->name('home');
 
-Route::get('/about',[aboutController::class, 'about']);
+Route::get('/about',[aboutController::class, 'about'])->name('about');
 
-Route::get('/contact',[contactController::class, 'contact']);
+Route::get('/contact',[contactController::class, 'contact'])->name('contact');

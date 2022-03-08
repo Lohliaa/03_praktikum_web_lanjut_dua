@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 class contactController extends Controller
 {
     public function contact(){
-        return view('contact')
-            ->with('contact','contact');
+        return view('contact',['title'=>'Contact Us']);
     }
 }
