@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\aboutController;
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
