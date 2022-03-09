@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class about extends Model
 {
     use HasFactory;
-
-    protected $table = 'home';
+    
+    protected $table = 'about';
     protected $primaryKey = 'id';
 }

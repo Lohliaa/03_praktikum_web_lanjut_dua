@@ -6,7 +6,27 @@
 		<p class="col-12 text-center">This is about page of simple house template. 
 		You can modify and use this HTML template for your website. Total 3 HTML pages included in this template. Header image has a parallax effect.</p>
 	</header>
-
+	<table border="1" cellpadding="10" align="center">
+		<thead>
+			  <tr>
+			<th bgcolor="lightgrey">Nomor</th>
+			<th bgcolor="lightgrey">Name</th>
+			<th bgcolor="lightgrey">Position</th>
+			  </tr>
+		 </thead>
+	
+		 <tbody>
+	
+		 @foreach ($about as $a)
+			  <tr>
+			  <td>{{$a->id}}</td>
+			  <td>{{$a->Name}}</td>
+			  <td>{{$a->Position}}</td>
+			  </tr>
+		 @endforeach
+		 </tbody>
+	</table>
+	<br><br>
 	<div class="tm-container-inner tm-persons">
 		<div class="row">
 			<article class="col-lg-6">

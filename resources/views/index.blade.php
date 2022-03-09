@@ -8,7 +8,30 @@
 				<h2 class="col-12 text-center tm-section-title">Welcome to Simple House</h2>
 				<p class="col-12 text-center">Total 3 HTML pages are included in this template. Header image has a parallax effect. You can feel free to download, edit and use this TemplateMo layout for your commercial or non-commercial websites.</p>
 			</header>
-		 
+			<table border="1" cellpadding="10" align="center">
+				<thead>
+					<tr>
+					<th bgcolor="lightgrey">Nomor</th>
+					<th bgcolor="lightgrey">Menu</th>
+					<th bgcolor="lightgrey">Category</th>
+					<th bgcolor="lightgrey">Price</th>
+					</tr>
+				 </thead>
+			
+				 <tbody>
+			
+				 @foreach ($home as $h)
+					  <tr>
+					  <td>{{$h->id}}</td>
+					  <td>{{$h->Menu}}</td>
+					  <td>{{$h->Category}}</td>
+					  <td>{{$h->Price}}</td>
+					  </tr>
+
+				 @endforeach
+				 </tbody>
+			</table>
+			<br><br>
 			<div class="tm-paging-links">
 				<nav>
 					<ul>
