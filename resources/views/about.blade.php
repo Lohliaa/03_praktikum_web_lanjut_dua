@@ -17,7 +17,7 @@
 	
 		 <tbody>
 	
-		 @foreach ($about as $a)
+		 @foreach ($About as $a)
 			  <tr>
 			  <td>{{$a->id}}</td>
 			  <td>{{$a->Name}}</td>

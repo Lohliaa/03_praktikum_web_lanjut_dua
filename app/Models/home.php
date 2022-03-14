@@ -9,6 +9,6 @@ class home extends Model
 {
     use HasFactory;
     
-    protected $table = 'home';
+    protected $table = 'Home';
     protected $primaryKey = 'id';
 }

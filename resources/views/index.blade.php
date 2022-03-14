@@ -20,7 +20,7 @@
 			
 				 <tbody>
 			
-				 @foreach ($home as $h)
+				 @foreach ($Home as $h)
 					  <tr>
 					  <td>{{$h->id}}</td>
 					  <td>{{$h->Menu}}</td>

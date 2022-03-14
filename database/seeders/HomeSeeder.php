@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\home;
+use App\Models\Home;
 
 class HomeSeeder extends Seeder
 {
@@ -15,7 +15,7 @@ class HomeSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('home')->insert([
+        DB::table('Home')->insert([
             [
             'Menu' => 'Fusce dictum finibus',
             'Category' => 'Pizza',

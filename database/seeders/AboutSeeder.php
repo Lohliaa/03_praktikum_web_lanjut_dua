@@ -15,7 +15,7 @@ class AboutSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('about')->insert([
+        DB::table('About')->insert([
             [
             'Name' => 'Jennifer Soft',
             'Position' => 'Founder-and-CEO',

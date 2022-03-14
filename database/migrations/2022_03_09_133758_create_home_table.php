@@ -13,7 +13,7 @@ class CreateHomeTable extends Migration
      */
     public function up()
     {
-        Schema::create('home', function (Blueprint $table) {
+        Schema::create('Home', function (Blueprint $table) {
             $table->id();
             $table->string('menu', 100);
             $table->string('category', 100);
@@ -28,6 +28,6 @@ class CreateHomeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('home');
+        Schema::dropIfExists('Home');
     }
 }

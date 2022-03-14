@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\home;
+use App\Models\Home;
 
 class homeController extends Controller
 {
     public function index(){
-        $home = home::all();
+        $home = Home::all();
         return view('index')
         ->with('title', 'Beranda')
-        ->with('home', $home);
+        ->with('Home', $home);
     }
 }

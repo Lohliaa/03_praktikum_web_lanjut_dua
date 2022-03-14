@@ -9,6 +9,6 @@ class about extends Model
 {
     use HasFactory;
     
-    protected $table = 'about';
+    protected $table = 'About';
     protected $primaryKey = 'id';
 }
