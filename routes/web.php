@@ -18,7 +18,5 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/',[homeController::class, 'index'])->name('home');
-
 Route::get('/about',[aboutController::class, 'about'])->name('about');
-
 Route::get('/contact',[contactController::class, 'contact'])->name('contact');
